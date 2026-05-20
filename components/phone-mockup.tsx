@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import { motion } from "motion/react";
+import { motion, useTransform, useMotionValue } from "motion/react";
 
 interface PhoneMockupProps {
   className?: string;
   images: string[];
   imageOpacities: any[]; 
+  imageAlts?: string[];
 }
 
-export function PhoneMockup({ className, images, imageOpacities }: PhoneMockupProps) {
+export function PhoneMockup({ className, images, imageOpacities, imageAlts }: PhoneMockupProps) {
   return (
     <div
       className={`relative w-[280px] h-[580px] sm:w-[320px] sm:h-[660px] bg-[#1a1a1a] rounded-[3rem] border-[4px] sm:border-[6px] border-[#2a2a2a] shadow-2xl overflow-hidden shrink-0 ${className}`}
@@ -25,19 +26,12 @@ export function PhoneMockup({ className, images, imageOpacities }: PhoneMockupPr
       {/* Screen Content Wrapper */}
       <div className="relative w-full h-full bg-[#0c0c0c] overflow-hidden rounded-[2.5rem] border border-white/5">
         {images.map((src, index) => (
-          <motion.div
+          <ImageLayer
             key={index}
-            style={{ opacity: imageOpacities[index] }}
-            className="absolute inset-0 w-full h-full"
-          >
-            <Image
-              src={src}
-              alt={`App Screen ${index + 1}`}
-              fill
-              className="object-cover"
-              referrerPolicy="no-referrer"
-            />
-          </motion.div>
+            src={src}
+            alt={imageAlts?.[index] || `App Screen ${index + 1}`}
+            opacity={imageOpacities[index]}
+          />
         ))}
         {/* If no images, show a placeholder gradient */}
         {images.length === 0 && (
@@ -47,5 +41,28 @@ export function PhoneMockup({ className, images, imageOpacities }: PhoneMockupPr
         )}
       </div>
     </div>
+  );
+}
+
+function ImageLayer({ src, alt, opacity }: { src: string; alt: string; opacity: any }) {
+  // Using interpolation for z-index to bring fading images to front
+  const defaultOpacity = useMotionValue(typeof opacity === "number" ? opacity : 1);
+  const motionOpacity = typeof opacity === "number" ? defaultOpacity : opacity;
+  const zIndex = useTransform(motionOpacity, (v: number) => Math.round(v * 10));
+  
+  return (
+    <motion.div
+      style={{ opacity: motionOpacity, zIndex }}
+      className="absolute inset-0 w-full h-full will-change-[opacity,z-index]"
+    >
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        className="object-cover"
+        referrerPolicy="no-referrer"
+        priority
+      />
+    </motion.div>
   );
 }

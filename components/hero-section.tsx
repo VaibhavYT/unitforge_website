@@ -10,12 +10,12 @@ export function HeroSection() {
       {/* Dynamic Background */}
       <div className="absolute inset-0 z-0">
         <Silk
-          speed={3.4}
-          scale={1.5}
+          speed={1.5}
+          scale={2}
           color="#06b6d4" /* cyan-500 */
-          noiseIntensity={1.8}
+          noiseIntensity={0.8}
           rotation={0}
-          className="opacity-70"
+          className="opacity-30"
         />
         <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
           <div className="w-[80vw] h-[80vw] md:w-[24rem] md:h-[24rem] bg-cyan-600/10 rounded-full blur-[120px] mix-blend-screen -z-10"></div>
