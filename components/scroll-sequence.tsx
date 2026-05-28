@@ -14,12 +14,12 @@ export function ScrollSequence() {
   });
 
   const screens = [
-    { src: "/screen6.png", alt: "Convertix Category Grid View" },
-    { src: "/screen5.png", alt: "Convertix Category List View" },
-    { src: "/screen4.png", alt: "Length Conversion Interface" },
-    { src: "/screen3.png", alt: "Pressure Conversion Interface with Magnitudes" },
-    { src: "/screen1.png", alt: "Saved Favorites Dashboard" },
-    { src: "/screen2.png", alt: "Local Conversion History" },
+    { src: "/unitforge_website/screen6.png", alt: "Convertix Category Grid View" },
+    { src: "/unitforge_website/screen5.png", alt: "Convertix Category List View" },
+    { src: "/unitforge_website/screen4.png", alt: "Length Conversion Interface" },
+    { src: "/unitforge_website/screen3.png", alt: "Pressure Conversion Interface with Magnitudes" },
+    { src: "/unitforge_website/screen1.png", alt: "Saved Favorites Dashboard" },
+    { src: "/unitforge_website/screen2.png", alt: "Local Conversion History" },
   ];
 
   const images = screens.map((s) => s.src);
