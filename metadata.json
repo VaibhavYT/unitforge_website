@@ -1,6 +1,6 @@
 {
-  "name": "UnitForge Showcase",
-  "description": "A scroll-animated showcase website for UnitForge, a premium unit conversion application.",
+  "name": "Convertix Showcase",
+  "description": "A scroll-animated showcase website for Convertix – Unit Converter, a premium unit conversion application.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

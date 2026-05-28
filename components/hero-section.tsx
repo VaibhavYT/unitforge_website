@@ -30,10 +30,10 @@ export function HeroSection() {
         
         <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-3">
           <div className="w-10 h-10 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/20">
-            <span className="text-white font-bold text-xl">U</span>
+            <span className="text-white font-bold text-xl">C</span>
           </div>
           <h1 className="text-2xl font-serif tracking-tight text-white hidden md:block">
-            UnitForge
+            Convertix
           </h1>
         </div>
         

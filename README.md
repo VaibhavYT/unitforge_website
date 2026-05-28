@@ -1,20 +1,56 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Convertix – Unit Converter Showcase Website
 
-# Run and deploy your AI Studio app
+This is a premium, beautifully-designed scroll-animated showcase website for **Convertix – Unit Converter**, a state-of-the-art unit conversion mobile application designed for modern professionals. 
 
-This contains everything you need to run your app locally.
+Built using **Next.js**, **React**, **PostCSS**, and animated using **Motion (framer-motion)**, this website provides a visual and interactive walkthrough of the mobile application's core capabilities.
 
-View your app in AI Studio: https://ai.studio/apps/89f00ab6-39d3-401e-9da7-8f47370d47fd
+---
 
-## Run Locally
+## 📱 Key App Features Highlighted
+- **26 Conversion Categories**: Ranging from common distances and masses to highly specialized professional units like pressure and thermodynamic values.
+- **Precision Calculations**: A highly robust native computation engine that executes complex, formula-based calculations effortlessly.
+- **Magnitude References**: Built-in scale references to help engineers verify values and scales at a glance.
+- **Personalized Favorites**: An intuitive favoriting system with custom dashboards for immediate access.
+- **Intelligent Local Persistence**: 100% offline-first capability where history and settings are securely persisted using Hive DB.
 
-**Prerequisites:**  Node.js
+---
 
+## 🛠️ Tech Stack & Showcase Features
+- **Next.js App Router**: Modern single-page showcase layout.
+- **Motion Animation (Framer Motion)**: Dynamic scroll-linked interactive experiences, bringing a mobile mockup to life with real UI screens.
+- **Atmospheric Visual Design**: Harmonies of dark background colors, deep cyan gradients, glassmorphism, and elegant typography (Playfair Display and Inter).
+- **Responsive Layout**: Designed for seamless presentation across desktops, tablets, and mobile screens.
+- **Privacy Center**: A built-in, dedicated, public `/privacy` page detailing the app's offline, no-data-collection privacy policy.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 🚀 Running Locally
+
+### Prerequisites
+- Node.js (v18.x or later recommended)
+- npm or yarn
+
+### Steps to Run
+
+1. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Run the Development Server:**
+   ```bash
+   npm run dev
+   ```
+
+3. **Open the Showcase:**
+   Navigate to [http://localhost:3000](http://localhost:3000) to view the interactive showcase website.
+
+---
+
+## 📦 Building for Production
+
+To build the static showcase website for deployment:
+```bash
+npm run build
+```
+This command compiles the TypeScript code, bundles all Next.js pages, and outputs a highly-optimized, production-ready build.

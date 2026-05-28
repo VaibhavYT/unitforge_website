@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/hero-section";
 import { ScrollSequence } from "@/components/scroll-sequence";
 import { Shield, Smartphone, Zap, Globe2, ChevronRight, Download } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -63,7 +64,7 @@ export default function Home() {
              Enhance your workflow.
            </h2>
            <p className="text-xl text-white/40 font-light mb-12">
-             Download UnitForge for Android today and experience precision at your fingertips.
+             Download Convertix for Android today and experience precision at your fingertips.
            </p>
            
            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-24">
@@ -76,8 +77,9 @@ export default function Home() {
            </div>
 
            <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/5 text-[10px] uppercase tracking-widest text-white/20">
-             <p>© 2026 UnitForge. All rights reserved.</p>
+             <p>© 2026 Convertix. All rights reserved.</p>
              <div className="flex items-center gap-6 mt-4 md:mt-0">
+               <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
                <a href="#" className="hover:text-white transition-colors">Twitter</a>
                <a href="#" className="hover:text-white transition-colors">GitHub</a>
                <a href="#" className="hover:text-white transition-colors">Discord</a>

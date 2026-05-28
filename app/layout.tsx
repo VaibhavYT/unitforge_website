@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'UnitForge - Precision Conversions',
+  title: 'Convertix – Unit Converter',
   description: 'A premium, highly specialized unit conversion application designed for professionals.',
 };
 

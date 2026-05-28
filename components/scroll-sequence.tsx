@@ -14,8 +14,8 @@ export function ScrollSequence() {
   });
 
   const screens = [
-    { src: "/screen6.png", alt: "UnitForge Category Grid View" },
-    { src: "/screen5.png", alt: "UnitForge Category List View" },
+    { src: "/screen6.png", alt: "Convertix Category Grid View" },
+    { src: "/screen5.png", alt: "Convertix Category List View" },
     { src: "/screen4.png", alt: "Length Conversion Interface" },
     { src: "/screen3.png", alt: "Pressure Conversion Interface with Magnitudes" },
     { src: "/screen1.png", alt: "Saved Favorites Dashboard" },
@@ -80,7 +80,7 @@ export function ScrollSequence() {
               <span className="italic text-cyan-500">Calculations.</span>
             </h2>
             <p className="text-lg text-white/40 leading-relaxed font-light mb-8">
-              Handle complex formula-based conversions effortlessly. Whether you're converting standard length metrics or calculating precise thermodynamic temperatures, UnitForge delivers instant accuracy.
+              Handle complex formula-based conversions effortlessly. Whether you're converting standard length metrics or calculating precise thermodynamic temperatures, Convertix delivers instant accuracy.
             </p>
             <ul className="space-y-4 font-light text-white/60">
                <li className="flex items-center gap-3"><Target className="w-4 h-4 text-cyan-500" /> Error-free precision</li>
